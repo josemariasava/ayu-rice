@@ -1,0 +1,29 @@
+/* wlogout — Ayu Mirage */
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 20px;
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: rgba(15, 18, 25, 0.85);
+}
+
+button {
+    color: #cccac2;
+    background-color: #242936;
+    border: 2px solid #3d4556;
+    border-radius: 16px;
+    margin: 12px;
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+
+button:focus,
+button:hover {
+    color: #1f2430;
+    background-color: #ffcc66;
+    border-color: #ffa659;
+    outline: none;
+}

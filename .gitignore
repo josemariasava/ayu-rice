@@ -1,0 +1,6 @@
+# Installer backups
+*.bak-*
+# Font archives
+*.zip
+# OS cruft
+.DS_Store

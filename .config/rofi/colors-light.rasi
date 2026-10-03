@@ -1,0 +1,8 @@
+/* Ayu Light */
+* {
+    bg:      #f8f9faff;
+    surface: #fcfcfcff;
+    fg:      #5c6166ff;
+    muted:   #828e9fff;
+    accent:  #f29718ff;
+}

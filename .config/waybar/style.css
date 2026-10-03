@@ -1,0 +1,100 @@
+/* Waybar — Ayu rice. Colors come from colors.css (symlink to the active theme). */
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    /* Frosted floating panel: a translucent theme-tinted background that the
+       Hyprland `blur on` layerrule turns into frosted glass — instead of bare
+       text sitting on the wallpaper. Rounded to match the 8/12px margins. */
+    background: alpha(@bg, 0.78);
+    color: @fg;
+    border-radius: 14px;
+    border: 1px solid alpha(@fg, 0.10);
+}
+
+/* Module groups stay transparent so the single panel reads as one surface. */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+    border: none;
+    padding: 0 4px;
+}
+
+#workspaces,
+#window,
+#clock,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio,
+#bluetooth,
+#network,
+#battery,
+#tray,
+#custom-power {
+    padding: 0 10px;
+    margin: 4px 2px;
+    color: @fg;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 8px;
+    margin: 4px 2px;
+    color: @muted;
+    background: transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+#workspaces button:hover {
+    color: @fg;
+    background: alpha(@accent, 0.12);
+}
+#workspaces button.active {
+    color: @bg;
+    background: @accent;
+}
+#workspaces button.urgent {
+    color: @bg;
+    background: @red;
+}
+
+#window {
+    color: @muted;
+    font-weight: 500;
+}
+
+#clock {
+    color: @accent;
+    font-weight: 700;
+}
+
+/* Battery colour by level: full/good = green, low = orange, critical = red */
+#battery,
+#battery.good     { color: @green; }
+#battery.warning  { color: @accent2; }
+#battery.critical { color: @red; }
+#battery.charging { color: @blue; }
+
+#pulseaudio.muted { color: @muted; }
+#bluetooth.off,
+#bluetooth.disabled   { color: @muted; }
+#bluetooth.connected  { color: @blue; }
+#network.disconnected { color: @red; }
+
+#custom-power {
+    color: @red;
+    font-size: 15px;
+}
+
+#tray menu {
+    background: @bg;
+    color: @fg;
+}

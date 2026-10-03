@@ -1,0 +1,8 @@
+/* Ayu Mirage */
+* {
+    bg:      #1f2430ff;
+    surface: #242936ff;
+    fg:      #cccac2ff;
+    muted:   #707a8cff;
+    accent:  #ffcc66ff;
+}
