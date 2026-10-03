@@ -7,6 +7,9 @@ Waybar, rofi, mako, wlogout and kitty all switch together.
 > Built on Ubuntu 26.04 "resolute" on a ThinkPad T14 (Intel UHD, 1920×1080).
 > Everything is from `apt` except the Nerd Font.
 
+> **Tweaking it yourself?** See **[MANAGING.md](MANAGING.md)** — a full guide to
+> changing colors, style, wallpaper, keybinds, and pushing your changes back here.
+
 ## Screenshots
 
 **Ayu Mirage (dark)**

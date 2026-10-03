@@ -9,7 +9,7 @@
 
     "modules-left":   ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right":  ["tray", "cpu", "memory", "backlight", "pulseaudio", "bluetooth", "network", "battery", "custom/power"],
+    "modules-right":  ["tray", "custom/notification", "cpu", "memory", "backlight", "pulseaudio", "bluetooth", "network", "battery", "custom/power"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -57,8 +57,8 @@
     "backlight": {
         "device": "intel_backlight",
         "format": " {percent}%",
-        "on-scroll-up": "brightnessctl set 5%+",
-        "on-scroll-down": "brightnessctl set 5%-",
+        "on-scroll-up": "~/.config/hypr/scripts/brightness.sh up",
+        "on-scroll-down": "~/.config/hypr/scripts/brightness.sh down",
         "tooltip": false
     },
 
@@ -105,6 +105,13 @@
     "tray": {
         "icon-size": 16,
         "spacing": 8
+    },
+
+    "custom/notification": {
+        "format": "",
+        "tooltip-format": "Left-click: show last notification\nRight-click: clear all",
+        "on-click": "makoctl restore",
+        "on-click-right": "makoctl dismiss --all"
     },
 
     "custom/power": {

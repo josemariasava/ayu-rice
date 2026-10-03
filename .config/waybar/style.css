@@ -38,10 +38,15 @@ window#waybar {
 #network,
 #battery,
 #tray,
+#custom-notification,
 #custom-power {
     padding: 0 10px;
     margin: 4px 2px;
     color: @fg;
+}
+
+#custom-notification {
+    color: @accent;
 }
 
 /* Workspaces */
