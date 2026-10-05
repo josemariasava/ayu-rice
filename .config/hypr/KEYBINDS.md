@@ -39,6 +39,17 @@
 | `Super + scroll` | Cycle workspaces |
 | `Super + S` | Scratchpad (special workspace) |
 
+## Monitors (ARZOPA stacked above the laptop)
+| Keys | Action |
+|------|--------|
+| `Super + ↑ / ↓` | Cross focus between the stacked screens |
+| `Super + Tab` | Jump focus to the other monitor |
+| `Super + Shift + Tab` | Send active window to the other monitor |
+| `Super + Ctrl + Tab` | Move the whole workspace to the other monitor |
+| `Super + Alt + Tab` | Swap what each monitor is showing |
+
+Workspaces **1–5 → laptop**, **6–10 → ARZOPA** (pinned, survives reconnect).
+
 ## Theme
 | Keys | Action |
 |------|--------|
